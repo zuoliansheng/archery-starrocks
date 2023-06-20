@@ -33,6 +33,7 @@
 | Phoenix | √ | ×  | √  | × | × | × | × | × | × | × |
 | ODPS | √ | ×  | ×  | × | × | × | × | × | × | × |
 | ClickHouse | √ | √  | √  | × | × | × | × | × | × | × |
+| StarRocks/Doris | √ | √  | √  | × | × | × | × | × | × | × |
 
 
 
@@ -121,6 +122,7 @@ python manage.py test -v 3
 - Phoenix Connector [phoenixdb](https://github.com/lalinsky/python-phoenixdb)
 - ODPS Connector [pyodps](https://github.com/aliyun/aliyun-odps-python-sdk)
 - ClickHouse Connector [clickhouse-driver](https://github.com/mymarilyn/clickhouse-driver)
+- StarRocks/Doris Connector [pymysql](https://github.com/PyMySQL/mysqlclient-python)
 - SQL解析/切分/类型判断 [sqlparse](https://github.com/andialbrecht/sqlparse)
 - MySQL Binlog解析/回滚 [python-mysql-replication](https://github.com/noplay/python-mysql-replication)
 - LDAP [django-auth-ldap](https://github.com/django-auth-ldap/django-auth-ldap)
@@ -138,6 +140,14 @@ python manage.py test -v 3
 - MyBatis XML解析 [mybatis-mapper2sql](https://github.com/hhyo/mybatis-mapper2sql)
 - RDS管理 [aliyun-openapi-python-sdk](https://github.com/aliyun/aliyun-openapi-python-sdk)
 - 数据加密 [django-mirage-field](https://github.com/luojilab/django-mirage-field)
+
+StarRocks/Doris特殊说明：
+===============
+- 角色组添加：
+- 大数据DBA:
+####### sql | permission | 导出数据字典sql | permission | 菜单 Dashboardsql | permission | 菜单 数据字典sql | permission | 菜单 数据库管理sql | permission | 菜单 会话管理sql | permission | 菜单 相关文档sql | permission | 菜单 实例管理sql | permission | 菜单 实例列表sql | permission | 菜单 OpenAPIsql | permission | 菜单 参数配置sql | permission | 菜单 SQL查询sql | permission | 菜单 权限管理sql | permission | 菜单 SchemaSyncsql | permission | 菜单 慢查日志sql | permission | 菜单 SQL审核sql | permission | 菜单 在线查询sql | permission | 菜单 SQL上线sql | permission | 菜单 系统管理sql | permission | 修改实例参数sql | permission | 查看实例参数列表sql | permission | 终止会话sql | permission | 查看会话sql | permission | 可查询所有实例sql | permission | 审核查询权限sql | permission | 提交SQL查询sql | permission | 执行SQL分析sql | permission | 执行SQL上线工单(仅自己提交的)sql | permission | 执行SQL上线工单(资源组粒度)sql | permission | 审核SQL上线工单sql | permission | 提交SQL上线工单
+- 大数据RD:
+####### admin | 日志记录 | Can add log entrysql | permission | 提交归档申请sql | permission | 菜单 Dashboardsql | permission | 菜单 相关文档sql | permission | 菜单 SQL查询sql | permission | 菜单 权限管理sql | permission | 菜单 慢查日志sql | permission | 菜单 优化工具sql | permission | 菜单 SQL审核sql | permission | 菜单 在线查询sql | permission | 菜单 SQL上线sql | permission | 申请查询权限sql | permission | 提交SQL查询sql | permission | 提交SQL上线工单
 
 
 贡献代码
