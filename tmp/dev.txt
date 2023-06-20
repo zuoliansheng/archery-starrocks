@@ -1,0 +1,8 @@
+starrocks
+docker run -p 9030:9030 -p 8030:8030 -p 8040:8040   -itd starrocks.docker.scarf.sh/starrocks/allin1-ubuntu
+redis
+docker run -p 6379:6379 -d redis:latest --requirepass 123456 --appendonly yes
+mysql
+docker run -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 --name mysql_test mysql
+archery
+login admin/123456
